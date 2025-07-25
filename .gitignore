@@ -1,0 +1,70 @@
+
+tmlog*.lck
+dependency-reduced-pom.xml
+
+/dist
+
+######################################################################
+# Build Tools
+
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+######################################################################
+# IDE
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/*
+nbbuild/
+zyplayer-doc-ui/dist/
+nbdist/
+.nb-gradle/
+
+######################################################################
+# Others
+*.log
+*.xml.versionsBackup
+
+!*/build/*.java
+!*/build/*.html
+!*/build/*.xml
+
+### VS Code ###
+.vscode/
+
+# rebel
+rebel.xml
+
+### gradle构建 ###
+*.gradle
+
+### office ###
+# 忽略office文件打开临时文件 #
+[~$]*.*
+tmlog.lck
+/.metadata/
+zyplayer-doc-data/bin
+zyplayer-doc-api/bin
+zyplayer-doc-core/bin
+zyplayer-doc-data/src/main/java/com/zyplayer/.metadata/
+zyplayer-doc-db/bin/
+zyplayer-doc-wiki/bin/
