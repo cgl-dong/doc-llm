@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>zyplayer-doc-wiki</artifactId>
+    <artifactId>doc-file</artifactId>
     <packaging>jar</packaging>
     <name>doc-file</name>
     <description>文件管理</description>
@@ -24,17 +24,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+        <!-- MinIO Starter -->
+        <dependency>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+            <version>8.5.7</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.dromara</groupId>
-            <artifactId>zyplayer-doc-data</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.dromara</groupId>
-            <artifactId>zyplayer-doc-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.jsoup</groupId>

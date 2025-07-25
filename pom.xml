@@ -190,6 +190,11 @@
 				<artifactId>zyplayer-doc-wiki</artifactId>
 				<version>${zyplayer.doc.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.dromara</groupId>
+				<artifactId>doc-file</artifactId>
+				<version>1.0.0</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
