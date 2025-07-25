@@ -30,7 +30,7 @@ docker-compose up -d
 - MySQL 5.7.x、8.x
 预计引入python等相关库和中间件
 
-数据库安装成功后，需要**手动创建**一个库：`zyplayer_doc`
+数据库安装成功后，需要**手动创建**一个库：`zyplayer_doc`,文件存储需要手动创建bucket:`doc-llm`，并配置好权限
 ```sql
 -- 建库语句
 create database zyplayer_doc;

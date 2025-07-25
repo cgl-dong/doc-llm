@@ -12,7 +12,8 @@ server:
     max-http-form-post-size: -1
     max-swallow-size: -1
 
-oss: minio
+oss:
+  type: minio
 
 # 整个文档项目的配置
 zyplayer:
