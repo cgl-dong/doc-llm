@@ -28,6 +28,7 @@
 		<module>zyplayer-doc-core</module>
 		<module>zyplayer-doc-data</module>
 		<module>zyplayer-doc-other</module>
+        <module>doc-file</module>
     </modules>
 
 	<dependencyManagement>
