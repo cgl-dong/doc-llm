@@ -19,6 +19,12 @@
 
 # 快速启动
 ## 相关依赖
+使用docker部署
+
+```shell
+docker-compose up -d
+```
+
 启动本系统仅依赖JAVA和MySQL
 - JAVA 1.8+
 - MySQL 5.7.x、8.x
