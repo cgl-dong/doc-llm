@@ -2,7 +2,7 @@
 FROM openjdk:8-jre-alpine
 
 # 设置维护者信息
-LABEL maintainer="zyplayer-doc"
+LABEL maintainer="cgl"
 
 # 设置时区
 ENV TZ=Asia/Shanghai

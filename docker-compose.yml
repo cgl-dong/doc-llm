@@ -4,19 +4,18 @@ services:
   # MySQL 5.7 数据库服务
   mysql:
     image: mysql:5.7
-    container_name: zyplayer-mysql
+    container_name: mysql_doc
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root123
+#      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: zyplayer_doc
-      MYSQL_USER: root
+      MYSQL_USER: doc
       MYSQL_PASSWORD: 123456
       TZ: Asia/Shanghai
     ports:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./mysql/init:/docker-entrypoint-initdb.d
     command:
       --character-set-server=utf8mb4
       --collation-server=utf8mb4_unicode_ci
@@ -59,10 +58,10 @@ services:
       - "8080:8080"
     environment:
       SPRING_PROFILES_ACTIVE: docker
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/zyplayer_doc?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-      SPRING_DATASOURCE_USERNAME: root
+      DATASOURCE_HOST_PORT: localhost
+      DATASOURCE_USERNAME: doc
       SPRING_DATASOURCE_PASSWORD: 123456
-      MINIO_ENDPOINT: http://minio:9000
+      MINIO_ENDPOINT: http://localhost:9000
       MINIO_ACCESS_KEY: minioadmin
       MINIO_SECRET_KEY: minioadmin123
       OSS_TYPE: minio
