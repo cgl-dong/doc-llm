@@ -1,6 +1,6 @@
 # MinIO配置
 minio:
   endpoint: http://mac:9000
-  accessKey: your-access-key
-  secretKey: your-secret-key
+  accessKey: 3ySd9fRS8oRsIBuy
+  secretKey: hMihUdiSCMomu3f99EMcDPQrpRNyGIIF
   bucketName: doc-llm
