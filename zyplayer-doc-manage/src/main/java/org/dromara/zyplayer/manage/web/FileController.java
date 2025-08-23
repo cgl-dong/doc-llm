@@ -1,14 +1,15 @@
 package org.dromara.zyplayer.manage.web;
 
-import org.dromara.utils.FileManager;
+import org.dromara.utils.client.FileManager;
 
-import org.dromara.zyplayer.core.json.ResponseJson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/file")

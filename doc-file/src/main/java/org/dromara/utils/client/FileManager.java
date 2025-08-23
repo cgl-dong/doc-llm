@@ -1,4 +1,4 @@
-package org.dromara.utils;
+package org.dromara.utils.client;
 
 
 import org.dromara.utils.entity.FileInfo;

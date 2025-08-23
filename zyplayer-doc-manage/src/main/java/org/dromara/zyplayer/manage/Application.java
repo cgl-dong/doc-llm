@@ -29,7 +29,8 @@ import java.util.Optional;
 @ComponentScan(basePackages = {
 		"org.dromara.zyplayer.manage",
 		"org.dromara.zyplayer.data",
-		"org.dromara.zyplayer.core"
+		"org.dromara.zyplayer.core",
+		"org.dromara.utils"
 })
 public class Application extends SpringBootServletInitializer {
 	private static final Logger logger = LoggerFactory.getLogger(Application.class);

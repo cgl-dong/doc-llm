@@ -46,3 +46,11 @@ spring:
       max-request-size: ${SERVLET_MAX_REQUEST_SIZE:100MB}
   datasource:
     continue-on-error: true
+
+
+# MinIO配置
+minio:
+  endpoint: http://mac:9000
+  accessKey: 5XovqAlMvapALZr6
+  secretKey: ZzfvQgQO8TpB4a3Vft4vUAfJISAIntHZ
+  bucketName: doc-llm
